@@ -334,7 +334,7 @@
   <a class="footer-link" href="https://twitter.com/" title="GO TO my Twitter profile">  <i class="social-icon fab fa-twitter"></i></a>
 
 
-  <p>All Rights Reserved. © Copyright 2020 Ocean Breeze Beach RESORT.</p>
+  <p>All Rights Reserved. © Copyright 2022 FitNaari.</p>
 
 </div>
 

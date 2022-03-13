@@ -123,14 +123,40 @@
    
 </head>
 <body>
-   
+<div class="navbar" style="background-color:#fad1d1 ">
+      <!-- MENU ICON -->
+      <div id="mySidebar" class="sidebar" style="float:left;background-color:#fad1d1" >
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <!-- <a href="aboutus.php">About us</a> -->
+      <a href="myprofile.php">My Profile</a>
+      <a href="dashboard.php">Dashboard</a>
+      <a href="bmi.php">BMI Calculator</a>
+      <a href="contact.php">Contact Us</a>
+      <a href="faqs.php">FAQS</a>
+      <a href="logout.php">Logout</a>
+    </div>
+    <div id="main" style="float:left;background-color:#fad1d1 ">
+     <button class="openbtn" onclick="openNav()">☰</button>
+   </div>
+  
+      <div class="logo" style="float:left;">
+        <!-- <img src="images/e1.png" width="250px" height="95px" > -->
+        <!-- <img src="images/fitnaarilogo.png" width="250px" height="100px"> -->
+      </div>
+  
+      <div style="float:right; padding-top:30px; padding-right: 20px;">
+        <!-- <a href="#faq" class="btn">FAQS</a> -->
+      </div>
+      </div>
+    </div>
+    <br>
  
     <script>
         AOS.init();
     </script>
     <br>
-    <section class="hiw" style="background-color:  #faebeb ;">
-        <div style="width: 100%; margin: auto;"><h1 class="htitle" data-aos="fade-up">Select the Category </h1></div>
+    <section class="hiw" style="background-color:#fad1d1 ">
+        <div style="width: 100%; margin: auto;"><h1 class="htitle" data-aos="fade-up" style="font-size: 50px; padding-top:30px">Select the Category </h1></div>
        
         <div class="bcont">
             <!-- <div class="card" data-aos="fade-down">
@@ -138,14 +164,14 @@
                 <p class="val1">Age -> 10-15</p>
                
             </div> -->
-            <div class="card" data-aos="fade-up">
-                <div class="block"><a href="age.html"><img height="90%" width="90%" src="images/disease.png" alt=""></a></div>
-                <p class="val1">Diseases</p>
+            <div class="card" data-aos="fade-up" style="background-color:#fad1d1 ;border-color:#fad1d1">
+                <div class="block" style="background-color:#fff"><a href="age.html"><img height="90%" width="90%" src="images/disease.png" alt=""></a></div>
+                <p class="htitle" >Diseases</p>
                
             </div>
-            <div class="card" data-aos="fade-down">
-                <div class="block"><a href="test.html"><img style="margin: 18px 0 0 9px;" height="80%" width="90%" src="images/test.png" alt=""></a></div>
-                <p class="val1">Tests</p>
+            <div class="card" data-aos="fade-down" style="background-color:#fad1d1;border-color:#fad1d1">
+                <div class="block" style="background-color:#fff"><a href="test.html"><img style="margin: 18px 0 0 9px;" height="80%" width="90%" src="images/test.png" alt=""></a></div>
+                <p class="htitle">Tests</p>
                
             </div>
             <!-- <div class="card" data-aos="fade-down">

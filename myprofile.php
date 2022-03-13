@@ -175,7 +175,7 @@ $other = $row['other'];
 
       </table>
     
-      <a href="aboutus.php"><button class="reserve" type="button" name="back" style="padding:10px 10px;">OKAY!</button></a>
+      <a href="dashboard.php"><button class="reserve" type="button" name="back" style="padding:10px 10px;">OKAY!</button></a>
 
     </div>
 

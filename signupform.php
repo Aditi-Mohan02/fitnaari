@@ -21,7 +21,7 @@ if (isset($_POST['save'])) {
 
   // form validation: ensure that the form is correctly filled ...
   // by adding (array_push()) corresponding error unto $errors array
-  if (empty($name)) { array_push($errors, "Username is required"); }
+  if (empty($name)) { array_push($errors, "Name is required"); }
   if (empty($email)) { array_push($errors, "Email is required"); }
   if (empty($password)) { array_push($errors, "Password is required"); }
  

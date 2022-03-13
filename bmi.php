@@ -1,7 +1,5 @@
 
 
-
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -59,15 +57,20 @@
 <?php
 
     include 'signinform.php';
+  
     $conn = new mysqli("localhost","root","","women_wellness");
     
-    $a = $_SESSION['Email'];
+    $a = $_SESSION['Email'] ;
+  
+
+  
     $sql=mysqli_query($conn,"SELECT * FROM createprofile where email='$a'");
     $row  = mysqli_fetch_array($sql);
     $age = $row['age'];
     $height= $row['height'];
     $weight= $row['weight'];
     $bmi = $weight/($height*$height)*10000;
+    $res = round($bmi,2)
 
     ?>
     <br>
@@ -83,7 +86,7 @@
 
 <h4 class="heading2" style="color:#162252; font-size:25px; margin-left:320px">YOUR BMI</h3>
 <br>
-<h4 class="heading2" style="color:#162252; font-size:28px; margin-left:350px"><?php echo $bmi ?> </h4>
+<h4 class="heading2" style="color:#162252; font-size:28px; margin-left:350px"><?php echo $res ?> </h4>
     
 </div>
 <div class="info-add">
@@ -153,7 +156,7 @@ if ($bmi < "16") {
     <a class="footer-link" href="https://twitter.com/" title="GO TO my Twitter profile">  <i class="social-icon fab fa-twitter"></i></a>
 
 
-    <p>All Rights Reserved. © Copyright 2022 WOMEN WELLNESS APP.</p>
+    <p>All Rights Reserved. © Copyright 2022 FitNaari.</p>
 
   </div>
 </div>

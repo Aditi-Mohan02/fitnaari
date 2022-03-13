@@ -25,8 +25,8 @@ if(isset($_POST['save'])){
     $stmt->execute();
 
 
-  echo '<script type="text/javascript">alert("Profile Saved");</script>';
-  header("Location: dashboard.php"); 
+  echo '<script type="text/javascript"> alert("Profile Saved. Please Login again."); </script>';
+  header("Location: loginpage.php"); 
     $stmt->close();
 
 
